@@ -11,7 +11,7 @@ public class Main extends Application {
         BezierEditorFX editor = new BezierEditorFX();
 
         Scene scene = new Scene(editor, 1000, 700);
-        stage.setTitle("Кривые Безье — JavaFX");
+        stage.setTitle("Кривые Безье — JavaFX (с собственным drawLine)");
         stage.setScene(scene);
         stage.show();
     }
