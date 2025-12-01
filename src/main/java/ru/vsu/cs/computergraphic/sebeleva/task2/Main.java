@@ -5,18 +5,16 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 public class Main extends Application {
-
     @Override
     public void start(Stage stage) {
-        BezierEditorFX editor = new BezierEditorFX();
-
-        Scene scene = new Scene(editor, 1000, 700);
-        stage.setTitle("Кривые Безье — JavaFX (с собственным drawLine)");
+        BezierEditorFX root = new BezierEditorFX();
+        Scene scene = new Scene(root, 1000, 700);
         stage.setScene(scene);
+        stage.setTitle("Bezier curves");
         stage.show();
     }
 
     public static void main(String[] args) {
-        launch();
+        launch(args);
     }
 }
