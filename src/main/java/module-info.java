@@ -1,8 +1,7 @@
-module com.chinesecheckers.demo {
+module bezier.demo {
     requires javafx.controls;
-    requires javafx.fxml;
+    requires javafx.graphics;
 
-
-    opens com.chinesecheckers.demo to javafx.fxml;
-    exports com.chinesecheckers.demo;
+    opens ru.vsu.cs.computergraphic.sebeleva.task2;
+    exports ru.vsu.cs.computergraphic.sebeleva.task2;
 }
