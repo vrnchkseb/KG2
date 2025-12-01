@@ -7,8 +7,9 @@ import javafx.stage.Stage;
 public class Main extends Application {
     @Override
     public void start(Stage stage) {
-        BezierEditorFX root = new BezierEditorFX();
-        Scene scene = new Scene(root, 1000, 700);
+        // Создаем корневой Pane и добавляем в него BezierEditorFX
+        BezierEditorFX editor = new BezierEditorFX();
+        Scene scene = new Scene(editor, 1000, 700);
         stage.setScene(scene);
         stage.setTitle("Bezier curves");
         stage.show();
